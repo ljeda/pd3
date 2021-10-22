@@ -1,0 +1,38 @@
+package tst.pd.core;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+import pd.core.BlackBox;
+
+public class BlackBoxTester {
+
+	@Test
+	public void changeKeysForTestsTest() {
+		Boolean[] actualKey;
+		boolean changeRKey;
+		
+		List<Boolean> r = new ArrayList<Boolean>();
+		for (int i = 0; i < 10; i++) {
+			k.add(false);
+			r.add(false);
+		}
+		changeRKey = true;
+		Boolean[] expectedKey = k.toArray(new Boolean[] {}); 
+		BlackBox blackbox = new BlackBox(k, r, 0);
+		for (int i = 0; i < 10; i++) {
+			blackbox.changeKeysForTests(changeRKey, new int[] {i});
+			actualKey = blackbox.getKey(changeRKey);
+			expectedKey[i] = true;
+			assertArrayEquals(expectedKey, actualKey);
+			blackbox.changeKeysForTests(changeRKey, new int[] {i});
+			actualKey = blackbox.getKey(changeRKey);
+			expectedKey[i] = false;
+			assertArrayEquals(expectedKey, actualKey);
+		}
+	}
+}

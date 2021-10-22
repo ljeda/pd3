@@ -1,0 +1,12 @@
+package tst.pd.core;
+
+import org.junit.Test;
+
+public class MixTester {
+
+	@Test
+	public void constructorTest() {
+		
+	}
+
+}

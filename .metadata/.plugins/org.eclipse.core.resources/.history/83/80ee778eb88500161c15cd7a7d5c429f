@@ -1,0 +1,26 @@
+package tst.pd.core;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+import pd.core.BlackBox;
+
+public class BlackBoxTester {
+
+	@Test
+	public void changeKeysForTestsTest() {
+		List<Boolean> k = new ArrayList<Boolean>();
+		List<Boolean> r = new ArrayList<Boolean>();
+		for (int i = 0; i < 10; i++) {
+			k.add(false);
+			r.add(false);
+		}
+		BlackBox blackbox = new BlackBox(k, r, 0);
+		for (int i = 0; i < 10; i++) {
+			blackbox.changeKeysForTests(true, new int[] {i});
+			blackbox.getKey(true);
+		}
+	}
+}

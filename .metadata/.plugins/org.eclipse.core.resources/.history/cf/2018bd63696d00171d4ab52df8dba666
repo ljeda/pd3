@@ -1,0 +1,23 @@
+package tst.pd.core;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import pd.core.CharacterArray;
+
+public class CharacterArrayTester {
+	
+	@Test
+	public void constructorTest() {
+		Character state = 'a', letter = 'b';
+		
+		CharacterArray characterArray = new CharacterArray(state, letter);
+		assertEquals(characterArray.getState(), state);
+		assertEquals(characterArray.getLetter(), letter);
+
+		assertEquals(characterArray.getState(), new Character(state));
+		assertEquals(characterArray.getLetter(), new Character(letter));
+	}
+
+}

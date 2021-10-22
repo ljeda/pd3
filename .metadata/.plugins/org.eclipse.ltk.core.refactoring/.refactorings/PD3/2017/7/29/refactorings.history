@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TestPerformerTester.java&apos; to &apos;PD3/tst/tst.pd.test&apos;&#x0D;&#x0A;- Original project: &apos;PD3&apos;&#x0D;&#x0A;- Destination element: &apos;PD3/tst/tst.pd.test&apos;&#x0D;&#x0A;- Original element: &apos;tst.pd.util.TestPerformerTester.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/tst&lt;tst.pd.test" element1="/tst&lt;tst.pd.util{TestPerformerTester.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1500570771455" units="1" version="1.0"/>
+</session>
