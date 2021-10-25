@@ -9,7 +9,7 @@ import pd.test.*;
 import pd.util.*;
 
 /**
- * @author £ukasz JÍda
+ * @author ≈Åukasz Jƒôda
  *
  */
 public class PerformanceTester {
@@ -38,26 +38,26 @@ public class PerformanceTester {
 
 	private void validateInput(int blackBoxesNumber, int n, int keysLength, int sampleSize) throws Exception {
 		if (blackBoxesNumber < 1) {
-			throw new Exception("Liczba powtÛrzeÒ testu powinna byÊ wiÍksza od 0.");
+			throw new Exception("Liczba powt√≥rze≈Ñ testu powinna byƒá wiƒôksza od 0.");
 		}
 		if (n < 0) {
-			throw new Exception("Liczba iteracji algorytmu powinna byÊ nieujemna.");
+			throw new Exception("Liczba iteracji algorytmu powinna byƒá nieujemna.");
 		}
 		if (keysLength < 1) {
-			throw new Exception("D≥ugoúÊ kluczy powinna byÊ wiÍksza od 0.");
+			throw new Exception("D≈Çugo≈õƒá kluczy powinna byƒá wiƒôksza od 0.");
 		}
 		if (sampleSize < 1) {
-			throw new Exception("D≥ugoúÊ prÛbki powinna byÊ wiÍksza od 0.");
+			throw new Exception("D≈Çugo≈õƒá pr√≥bki powinna byƒá wiƒôksza od 0.");
 		}
 	}
 
 	public void performTest(String subfolder) {
 		if (_blackBoxesGenerator == null) {
-			System.err.println("Instancje do testÛw zosta≥y zainicjalizowane niepoprawnie.");
+			System.err.println("Instancje do test√≥w zosta≈Çy zainicjalizowane niepoprawnie.");
 			return;
 		}
 		if (_sample == null) {
-			System.err.println("PrÛbka do testÛw zosta≥a zainicjalizowana niepoprawnie.");
+			System.err.println("Pr√≥bka do test√≥w zosta≈Ça zainicjalizowana niepoprawnie.");
 			return;
 		}
 		for (int i = 0; i < _blackBoxesGenerator.getSize(); i++) {
@@ -81,7 +81,7 @@ public class PerformanceTester {
 				System.out.println("1:" + _sample);
 				System.out.println("2:" + decryptedSample);
 				if (!_sample.equals(decryptedSample)) {
-					System.err.println("Algorytm zosta≥ zaburzony, " + "zdekodowana wiadomoúÊ jest inna niø wyjúciowa.");
+					System.err.println("Algorytm zosta≈Ç zaburzony, " + "zdekodowana wiadomo≈õƒá jest inna ni≈º wyj≈õciowa.");
 					break;
 				}
 				_encryptionTimes[i] = midTime - startTime;
@@ -89,7 +89,7 @@ public class PerformanceTester {
 				_encryptionSizes[i] = _sample.length() * _letterBitLength;
 				_decryptionSizes[i] = encryptedSample.length() * _letterBitLength;
 			} catch (Exception e) {
-				System.err.println("Wystπpi≥ b≥πd przy prÛbie pobrania instancji " + "do testÛw wydajnoúciowych: " + e.getLocalizedMessage());
+				System.err.println("WystƒÖpi≈Ç b≈ÇƒÖd przy pr√≥bie pobrania instancji " + "do test√≥w wydajno≈õciowych: " + e.getLocalizedMessage());
 				continue;
 			}
 		}
@@ -101,7 +101,7 @@ public class PerformanceTester {
 			subfolder = "";
 		}
 		String timestamp = new SimpleDateFormat("yyyy-MM-dd__HH_mm_ss").format(new Date());
-		String rootFolder = "D:\\studia\\III stopieÒ\\doktorat\\workspace\\PD3\\performance_tests\\";
+		String rootFolder = "D:\\studia\\III stopie≈Ñ\\doktorat\\workspace\\PD3\\performance_tests\\";
 		String testFolder = rootFolder;
 		try {
 			File directory = new File(rootFolder + subfolder);
@@ -115,7 +115,7 @@ public class PerformanceTester {
 				}
 			}
 		} catch (Exception e) {
-			System.err.println("Wystπpi≥ b≥πd przy prÛbie stworzenia folderu do zapisu wynikÛw testÛw wydajnoúciowych: " + e.getLocalizedMessage());
+			System.err.println("WystƒÖpi≈Ç b≈ÇƒÖd przy pr√≥bie stworzenia folderu do zapisu wynik√≥w test√≥w wydajno≈õciowych: " + e.getLocalizedMessage());
 		}
 		String filepath = testFolder + "\\performance_test_" + timestamp + ".txt";
 		PrintWriter writer = null;
@@ -149,7 +149,7 @@ public class PerformanceTester {
 			writer.println(prepareMeanValuesRow());
 			writer.println(_bar);
 		} catch (FileNotFoundException e) {
-			System.err.println("Zapisywanie wynikÛw do pliku nie powiod≥o siÍ: " + e.getLocalizedMessage());
+			System.err.println("Zapisywanie wynik√≥w do pliku nie powiod≈Ço siƒô: " + e.getLocalizedMessage());
 		} finally {
 			if (writer != null) {
 				writer.close();

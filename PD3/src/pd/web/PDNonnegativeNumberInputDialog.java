@@ -1,7 +1,7 @@
 package pd.web;
 
 /**
- * @author £ukasz Jêda
+ * @author Åukasz JÄ™da
  * 
  */
 public class PDNonnegativeNumberInputDialog extends PDInputDialog<Integer> {
@@ -18,9 +18,9 @@ public class PDNonnegativeNumberInputDialog extends PDInputDialog<Integer> {
 				return null;
 			}
 		} catch (Exception e) {
-			return "Nie poda³eœ nieujemnej liczby ca³kowitej.";
+			return "Nie PodaÅ‚eÅ› nieujemnej liczby caÅ‚kowitej.";
 		}
-		return "Liczba " + _buttonLabel + " powinna byæ nieujemn¹ liczb¹ ca³kowit¹.";
+		return "Liczba " + _buttonLabel + " powinna byÄ‡ nieujemnÄ… liczbÄ™ caÅ‚kowitÄ….";
 	}
 
 	@Override

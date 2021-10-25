@@ -6,7 +6,7 @@ import java.util.*;
 import javax.swing.*;
 
 /**
- * @author £ukasz JÍda
+ * @author ≈Åukasz Jƒôda
  * 
  */
 public class PDPanel extends JPanel {
@@ -104,12 +104,12 @@ public class PDPanel extends JPanel {
 	}
 
 	private PDAlphabetInputDialog _alphabetDialog = new PDAlphabetInputDialog("alfabet");
-	private PDBinaryWordInputDialog _kWordDialog = new PDBinaryWordInputDialog("s≥owo k");
-	private PDBinaryWordInputDialog _rWordDialog = new PDBinaryWordInputDialog("s≥owo r");
+	private PDBinaryWordInputDialog _kWordDialog = new PDBinaryWordInputDialog("s≈Çowo k");
+	private PDBinaryWordInputDialog _rWordDialog = new PDBinaryWordInputDialog("s≈Çowo r");
 	private PDNonnegativeNumberInputDialog _nIterationNumberDialog = new PDNonnegativeNumberInputDialog("n");
-	private PDScrollTextArea _qMixArea = new PDScrollTextArea("tQ (puste = domyúlny)", 10, 12);
-	private PDScrollTextArea _yMixArea = new PDScrollTextArea("tY (puste = domyúlny)", 10, 12);
-	private PDScrollTextArea _zMixArea = new PDScrollTextArea("tZ (puste = domyúlny)", 10, 12);
+	private PDScrollTextArea _qMixArea = new PDScrollTextArea("tQ (puste = domy≈õlny)", 10, 12);
+	private PDScrollTextArea _yMixArea = new PDScrollTextArea("tY (puste = domy≈õlny)", 10, 12);
+	private PDScrollTextArea _zMixArea = new PDScrollTextArea("tZ (puste = domy≈õlny)", 10, 12);
 	private PDScrollTextArea _plaintextArea = new PDScrollTextArea("Tekst", 10, 30);
 	private PDScrollTextArea _cryptotextArea = new PDScrollTextArea("Kryptogram", 10, 30);
 	private PDOutputStream _outputStream = new PDOutputStream("Komunikaty", 3, 70);

@@ -6,7 +6,7 @@ import pd.core.*;
 import pd.util.*;
 
 /**
- * @author £ukasz JÍda
+ * @author ≈Åukasz Jƒôda
  * 
  */
 public class TestPerformer implements CJProxy {
@@ -15,7 +15,7 @@ public class TestPerformer implements CJProxy {
 
 	TestPerformer(int blackBoxesNumber, int testMode, int desiredBitArraySize, int encryptionOrder) {
 		if (encryptionOrder < 0) {
-			System.err.println("Liczba iteracji algorytmu powinna byÊ liczbπ nieujemnπ.");
+			System.err.println("Liczba iteracji algorytmu powinna byƒá liczbƒÖ nieujemnƒÖ.");
 			resetTest();
 			return;
 		}
@@ -106,15 +106,15 @@ public class TestPerformer implements CJProxy {
 
 	private boolean validateInput(int blackBoxesNumber, int testMode, int desiredBitArraySize) {
 		if (blackBoxesNumber < 1) {
-			System.err.println("Liczba powtÛrzeÒ testu powinna byÊ wiÍksza od 0.");
+			System.err.println("Liczba powt√≥rze≈Ñ testu powinna byƒá wiƒôksza od 0.");
 			return false;
 		}
 		if (testMode < 1 || testMode > 11) {
-			System.err.println("Numer testu powinien byÊ liczbπ naturalnπ z zakresu 1 - 11.");
+			System.err.println("Numer testu powinien byƒá liczbƒÖ naturalnƒÖ z zakresu 1 - 11.");
 			return false;
 		}
 		if (desiredBitArraySize < 1) {
-			System.err.println("D≥ugoúÊ ciπgu bitÛw powinna byÊ wiÍksza od 0.");
+			System.err.println("D≈Çugo≈õƒá ciƒÖgu bit√≥w powinna byƒá wiƒôksza od 0.");
 			return false;
 		}
 		return true;
@@ -123,19 +123,19 @@ public class TestPerformer implements CJProxy {
 	@Override
 	public Object execute(Object args) throws Exception {
 		if (!(args instanceof int[])) {
-			throw new Exception("Argument metody 'execute' powinien byÊ tablicπ prymitywÛw typu int.");
+			throw new Exception("Argument metody 'execute' powinien byƒá tablicƒÖ prymityw√≥w typu int.");
 		}
 		int[] arguments = (int[]) args;
 		if (arguments.length < 1) {
-			throw new Exception("Zbyt ma≥o argumentÛw przekazanych w tablicy bÍdπcej argumentem " + "metody 'execute'.");
+			throw new Exception("Zbyt ma≈Ço argument√≥w przekazanych w tablicy bƒôdƒÖcej argumentem " + "metody 'execute'.");
 		}
 
 		int blackBoxNumber = arguments[0];
 		if (_blackBoxesGenerator == null) {
-			throw new Exception("Wystπpi≥ b≥πd podczas inicjalizacji testu.");
+			throw new Exception("WystƒÖpi≈Ç b≈ÇƒÖd podczas inicjalizacji testu.");
 		}
 		if (blackBoxNumber >= _blackBoxesGenerator.getSize()) {
-			throw new Exception("Numer powtÛrzenia testu jest wiÍkszy niø ca≥kowita liczba powtÛrzeÒ.");
+			throw new Exception("Numer powt√≥rzenia testu jest wiƒôkszy ni≈º ca≈Çkowita liczba powt√≥rze≈Ñ.");
 		}
 
 		executeTestMode(blackBoxNumber);
@@ -199,7 +199,7 @@ public class TestPerformer implements CJProxy {
 		if (_debugModeDisabled) {
 			return;
 		}
-		System.out.println("BB: " + blackBoxNumber + " loopsCount: " + loopsCount + " i: " + i + " j: " + j + ". up≥ynÍ≥o: "
+		System.out.println("BB: " + blackBoxNumber + " loopsCount: " + loopsCount + " i: " + i + " j: " + j + ". up≈Çynƒô≈Ço: "
 				+ (System.currentTimeMillis() - startTime) / 1000 + " sekund. LBBPT: " + LastBlackBoxProcessingTime + " MBBPT: " + MeanBlackBoxProcessingTime);
 	}
 
@@ -478,7 +478,7 @@ public class TestPerformer implements CJProxy {
 	// for (int j = 0; j < blackBoxes.length; j++) {
 	// System.out.println("BB: " + blackBoxNumber + " loopsCount: " + loopsCount
 	// + " i: " +
-	// i + " j: " + j + ". up≥ynÍ≥o: " + (System.currentTimeMillis() -
+	// i + " j: " + j + ". up≈Çynƒô≈Ço: " + (System.currentTimeMillis() -
 	// startTime) /
 	// 1000 + " sekund. LBBPT: " + LastBlackBoxProcessingTime + " MBBPT: " +
 	// MeanBlackBoxProcessingTime);
@@ -517,7 +517,7 @@ public class TestPerformer implements CJProxy {
 	// for (int j = 0; j < blackBoxes.length; j++) {
 	// System.out.println("BB: " + blackBoxNumber + " loopsCount: " + loopsCount
 	// + " i: " +
-	// i + " j: " + j + ". up≥ynÍ≥o: " + (System.currentTimeMillis() -
+	// i + " j: " + j + ". up≈Çynƒô≈Ço: " + (System.currentTimeMillis() -
 	// startTime) /
 	// 1000 + " sekund. LBBPT: " + LastBlackBoxProcessingTime + " MBBPT: " +
 	// MeanBlackBoxProcessingTime);

@@ -1,7 +1,7 @@
 package pd.core;
 
 /**
- * @author £ukasz Jêda
+ * @author Åukasz JÄ™da
  * 
  */
 public class CharacterArray {

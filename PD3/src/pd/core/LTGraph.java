@@ -3,7 +3,7 @@ package pd.core;
 import java.util.*;
 
 /**
- * @author £ukasz Jêda
+ * @author Åukasz JÄ™da
  * 
  */
 public class LTGraph {

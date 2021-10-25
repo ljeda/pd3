@@ -18,6 +18,69 @@
 <entry path="C:\Program Files\Java\jre1.8.0_102\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+<libraryInfo home="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home" version="1.8.0_261">
+<bootpath>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmjcefw.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmsaslfw.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmcertpathprovider.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmcertpathfw.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmjsseprovider2.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/xml.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmorbapi.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmorb.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmjssefw.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmsecurity.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmpkcs.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmcfw.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmjgssfw.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmjgssprovider.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed/ibmext.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/resources.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/rt.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/sunrsasign.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/jsse.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/jce.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/charsets.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/jfr.jar"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Users/ljeda/Library/Java/Extensions"/>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/ext"/>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/Network/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/usr/lib/java"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/Library/Java/JavaVirtualMachines/IBM_SDK_8.0.6.15/Contents/Home/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home" version="11.0.2"/>
+<libraryInfo home="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home" version="16.0.2"/>
+<libraryInfo home="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home" version="1.8.0_261">
+<bootpath>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/resources.jar"/>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar"/>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/sunrsasign.jar"/>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jsse.jar"/>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jce.jar"/>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/charsets.jar"/>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jfr.jar"/>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Users/ljeda/Library/Java/Extensions"/>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/ext"/>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/Network/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/usr/lib/java"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="C:\Program Files\IBM\Java80" version="1.8.0">
 <bootpath>
 <entry path="C:\Program Files\IBM\Java80\jre\bin\compressedrefs\jclSC180\vm.jar"/>

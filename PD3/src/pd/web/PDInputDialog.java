@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 /**
- * @author £ukasz JÍda
+ * @author ≈Åukasz Jƒôda
  * 
  */
 public abstract class PDInputDialog<T> {
@@ -20,12 +20,12 @@ public abstract class PDInputDialog<T> {
 
 			@Override
 			public void actionPerformed(ActionEvent event) {
-				String entry = JOptionPane.showInputDialog(null, "Wpisz " + _buttonLabel + " (lub pozostaw to pole puste by ustawiÊ wartoúÊ domyúlnπ): ",
+				String entry = JOptionPane.showInputDialog(null, "Wpisz " + _buttonLabel + " (lub pozostaw to pole puste by ustawiƒá warto≈õƒá domy≈õlnƒÖ): ",
 						_buttonLabel, JOptionPane.QUESTION_MESSAGE);
 				if (entry != null) {
 					if (entry.equals("")) {
 						setDefaultValue();
-						JOptionPane.showMessageDialog(null, _buttonLabel + " - ustawiona wartoúÊ domyúlna (" + getStringValue() + ")", _buttonLabel,
+						JOptionPane.showMessageDialog(null, _buttonLabel + " - ustawiona warto≈õƒá domy≈õlna (" + getStringValue() + ")", _buttonLabel,
 								JOptionPane.INFORMATION_MESSAGE);
 					} else {
 						String errorMessage = validateEntry(entry);
@@ -34,12 +34,12 @@ public abstract class PDInputDialog<T> {
 						} else {
 							setDefaultValue();
 							JOptionPane.showMessageDialog(null,
-									errorMessage + " " + _buttonLabel + " - ustawiona wartoúÊ " + "domyúlna (" + getStringValue() + ")", _buttonLabel,
+									errorMessage + " " + _buttonLabel + " - ustawiona warto≈õƒá " + "domy≈õlna (" + getStringValue() + ")", _buttonLabel,
 									JOptionPane.ERROR_MESSAGE);
 						}
 					}
 				} else {
-					JOptionPane.showMessageDialog(null, "Kliknπ≥eú anuluj. " + _buttonLabel + " : " + getStringValue(), _buttonLabel,
+					JOptionPane.showMessageDialog(null, "KliknƒÖ≈Çe≈õ anuluj. " + _buttonLabel + " : " + getStringValue(), _buttonLabel,
 							JOptionPane.WARNING_MESSAGE);
 				}
 			}

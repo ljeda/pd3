@@ -5,7 +5,7 @@ import java.util.*;
 import pd.util.*;
 
 /**
- * @author £ukasz JÍda
+ * @author ≈Åukasz Jƒôda
  * 
  */
 public class BlackBox {
@@ -48,7 +48,7 @@ public class BlackBox {
 
 	private Alphabet checkAlphabet(Alphabet alphabet) {
 		if (alphabet == null || alphabet.getSize() < 2) {
-			System.err.println("Alphabet jest za ma≥y by za≥oøenia co do miksÛw mog≥y byÊ " + "spe≥nione. Uøywam domyúlnego alfabetu.");
+			System.err.println("Alphabet jest za ma≈Çy by za≈Ço≈ºenia co do miks√≥w mog≈Çy byƒá " + "spe≈Çnione. U≈ºywam domy≈õlnego alfabetu.");
 			return new Alphabet();
 		} else {
 			return alphabet;
@@ -57,13 +57,13 @@ public class BlackBox {
 
 	public void validateAndSetCommonEntries(List<Boolean> k, List<Boolean> r, int n) {
 		if (k == null || k.isEmpty()) {
-			System.err.println("Ustawiam domyúlne s≥owo 'k'.");
+			System.err.println("Ustawiam domy≈õlne s≈Çowo 'k'.");
 		} else {
 			_k = k.toArray(new Boolean[0]);
 			_kSize = _k.length;
 		}
 		if (r == null || r.isEmpty()) {
-			System.err.println("Ustawiam domyúlne s≥owo 'r'.");
+			System.err.println("Ustawiam domy≈õlne s≈Çowo 'r'.");
 		} else {
 			_r = r.toArray(new Boolean[0]);
 			_rSize = _r.length;
@@ -73,7 +73,7 @@ public class BlackBox {
 
 	public void validateAndSetOrder(int n) {
 		if (n < 0) {
-			System.err.println("Ustawiam domyúlnπ liczbÍ iteracji algorytmu 'n'.");
+			System.err.println("Ustawiam domy≈õlnƒÖ liczbƒô iteracji algorytmu 'n'.");
 		} else {
 			_n = n;
 			_2n = n << 1;
@@ -137,7 +137,7 @@ public class BlackBox {
 				char c = _encryptionChars[pos];
 				// char c = _encryptionChars[i];
 				if (!_alphabet.hasLetter(c)) {
-					throw new Exception("S≥owo zawiera literÍ: '" + c + "', ktÛra nie wystÍpuje w alfabecie.");
+					throw new Exception("s≈Çowo zawiera literƒô: '" + c + "', kt√≥ra nie wystƒôpuje w alfabecie.");
 				}
 				Character oldv = v;
 				v = _ltGraph.N(v, c, _r[imodr]);
@@ -161,8 +161,8 @@ public class BlackBox {
 	// i = _encryptionCharsLength - 1 - i;
 	// }
 	// if (i < 0 || i >= _encryptionCharsLength) {
-	// throw new Exception("Algorytm szyfrujπcy dotar≥ poza granice szyfrowanego
-	// s≥owa.");
+	// throw new Exception("Algorytm szyfrujƒÖcy dotar≈Ç poza granice szyfrowanego
+	// s≈Çowa.");
 	// }
 	// return i;
 	// }
@@ -175,7 +175,7 @@ public class BlackBox {
 		for (int i = 0; i < wordSize; i++) {
 			char c = plaintext[i];
 			if (!_alphabet.hasLetter(c)) {
-				throw new Exception("S≥owo zawiera literÍ: '" + c + "', ktÛra nie wystÍpuje w alfabecie.");
+				throw new Exception("s≈Çowo zawiera literƒô: '" + c + "', kt√≥ra nie wystƒôpuje w alfabecie.");
 			}
 			// cryptotext[i] = _ltGraph.L(v, c, _k[imodk], _r[imodr]);
 			// v = _ltGraph.N(v, c, _r[imodr]);
@@ -207,7 +207,7 @@ public class BlackBox {
 		for (int i = 0; i < wordSize; i++) {
 			char c = plaintext[i];
 			if (!_alphabet.hasLetter(c)) {
-				throw new Exception("S≥owo zawiera literÍ: '" + c + "', ktÛra nie wystÍpuje w alfabecie.");
+				throw new Exception("s≈Çowo zawiera literƒô: '" + c + "', kt√≥ra nie wystƒôpuje w alfabecie.");
 			}
 			// cryptotext[i] = _ltGraph.L(v, c, _k[imodk], _r[imodr]);
 			// v = _ltGraph.N(v, c, _r[imodr]);
@@ -233,19 +233,19 @@ public class BlackBox {
 
 	public String encrypt(String word) {
 		if (word == null || word.isEmpty()) {
-			System.err.println("Poda≥eú puste s≥owo do zaszyfrowania.");
+			System.err.println("Poda≈Çe≈õ puste s≈Çowo do zaszyfrowania.");
 			return null;
 		}
 		Character firstLetter = _alphabet.getLetter(0);
 		Character start = _alphabet.getLetter(_generator.nextInt(_alphabet.getSize()));
 		String startEncrypted = encryptStartingFrom(start.toString(), firstLetter);
 		if (startEncrypted == null) {
-			System.err.println("Wystπpi≥ b≥πd podczas szyfrowania stanu poczπtkowego.");
+			System.err.println("WystƒÖpi≈Ç b≈ÇƒÖd podczas szyfrowania stanu poczƒÖtkowego.");
 			return null;
 		}
 		String encryptedWord = encryptStartingFrom(word, start);
 		if (encryptedWord == null) {
-			System.err.println("Wystπpi≥ b≥πd podczas szyfrowania wiadomoúci.");
+			System.err.println("WystƒÖpi≈Ç b≈ÇƒÖd podczas szyfrowania wiadomo≈õci.");
 			return null;
 		}
 		return startEncrypted + encryptedWord;
@@ -257,7 +257,7 @@ public class BlackBox {
 			return null;
 		}
 		if (!_alphabet.hasLetter(start)) {
-			System.err.println("Stan startowy dla zaszyfrowania nie jest literπ z zadanego alfabetu.");
+			System.err.println("Stan startowy dla zaszyfrowania nie jest literƒÖ z zadanego alfabetu.");
 			return null;
 		}
 		synchronized (encryptionLock) {
@@ -290,7 +290,7 @@ public class BlackBox {
 				_encryptionDirections = null;
 				return encoded;
 			} catch (Exception e) {
-				System.err.println(e.getMessage() + " S≥owo nie zostanie zaszyfrowane.");
+				System.err.println(e.getMessage() + " s≈Çowo nie zostanie zaszyfrowane.");
 				return null;
 			}
 		}
@@ -298,7 +298,7 @@ public class BlackBox {
 
 	private String encryptStartingFrom_old(String word) {
 		if (word == null || word.isEmpty()) {
-			System.err.println("Poda≥eú puste s≥owo do zaszyfrowania.");
+			System.err.println("Poda≈Çe≈õ puste s≈Çowo do zaszyfrowania.");
 			return null;
 		}
 		String cryptotext = word;
@@ -308,14 +308,14 @@ public class BlackBox {
 			}
 			return enc_old(cryptotext);
 		} catch (Exception e) {
-			System.err.println(e.getMessage() + " S≥owo nie zostanie zaszyfrowane.");
+			System.err.println(e.getMessage() + " s≈Çowo nie zostanie zaszyfrowane.");
 			return null;
 		}
 	}
 
 	private String encryptStartingFrom_old2(String word) {
 		if (word == null || word.isEmpty()) {
-			System.err.println("Poda≥eú puste s≥owo do zaszyfrowania.");
+			System.err.println("Poda≈Çe≈õ puste s≈Çowo do zaszyfrowania.");
 			return null;
 		}
 		String cryptotext = word;
@@ -325,7 +325,7 @@ public class BlackBox {
 			}
 			return enc_old(cryptotext);
 		} catch (Exception e) {
-			System.err.println(e.getMessage() + " S≥owo nie zostanie zaszyfrowane.");
+			System.err.println(e.getMessage() + " s≈Çowo nie zostanie zaszyfrowane.");
 			return null;
 		}
 	}
@@ -341,7 +341,7 @@ public class BlackBox {
 				char c = _decryptionChars[pos];
 				// char c = _decryptionChars[i];
 				if (!_alphabet.hasLetter(c)) {
-					throw new Exception("Kryptotekst zawiera literÍ: '" + c + "', ktÛra nie " + "wystÍpuje w alfabecie.");
+					throw new Exception("Kryptotekst zawiera literƒô: '" + c + "', kt√≥ra nie " + "wystƒôpuje w alfabecie.");
 				}
 				Character v = _ltGraph.P(oldv, c, _k[imodk]);
 				// below must include also nextDecPositionInCurrentDirection if
@@ -366,8 +366,8 @@ public class BlackBox {
 	// i = _decryptionCharsLength - 1 - i;
 	// }
 	// if (i < 0 || i >= _decryptionCharsLength) {
-	// throw new Exception("Algorytm deszyfrujπcy dotar≥ poza granice
-	// deszyfrowanego s≥owa.");
+	// throw new Exception("Algorytm deszyfrujƒÖcy dotar≈Ç poza granice
+	// deszyfrowanego s≈Çowa.");
 	// }
 	// return i;
 	// }
@@ -380,7 +380,7 @@ public class BlackBox {
 		for (int i = 0; i < wordSize; i++) {
 			char c = cryptotext[i];
 			if (!_alphabet.hasLetter(c)) {
-				throw new Exception("Kryptotekst zawiera literÍ: '" + c + "', ktÛra nie " + "wystÍpuje w alfabecie.");
+				throw new Exception("Kryptotekst zawiera literƒô: '" + c + "', kt√≥ra nie " + "wystƒôpuje w alfabecie.");
 			}
 			Character v = _ltGraph.P(oldv, c, _k[imodk]);
 			decrypted[i] = _ltGraph.D(oldv, v, _r[imodr]);
@@ -405,7 +405,7 @@ public class BlackBox {
 		for (int i = 0; i < wordSize; i++) {
 			char c = cryptotext[i];
 			if (!_alphabet.hasLetter(c)) {
-				throw new Exception("Kryptotekst zawiera literÍ: '" + c + "', ktÛra nie " + "wystÍpuje w alfabecie.");
+				throw new Exception("Kryptotekst zawiera literƒô: '" + c + "', kt√≥ra nie " + "wystƒôpuje w alfabecie.");
 			}
 			Character v = _ltGraph.P(oldv, c, _k[imodk]);
 			decrypted[--position] = _ltGraph.D(oldv, v, _r[imodr]);
@@ -424,18 +424,18 @@ public class BlackBox {
 
 	public String decrypt(String cryptotext) {
 		if (cryptotext == null || cryptotext.isEmpty()) {
-			System.err.println("Poda≥eú puste s≥owo do odszyfrowania.");
+			System.err.println("Poda≈Çe≈õ puste s≈Çowo do odszyfrowania.");
 			return null;
 		}
 		Character firstLetter = _alphabet.getLetter(0);
 		String startDecrypted = decryptStartingFrom(cryptotext.substring(0, 1), firstLetter);
 		if (startDecrypted == null || startDecrypted.toCharArray().length != 1) {
-			System.err.println("Wystπpi≥ b≥πd podczas deszyfrowania stanu poczπtkowego.");
+			System.err.println("WystƒÖpi≈Ç b≈ÇƒÖd podczas deszyfrowania stanu poczƒÖtkowego.");
 			return null;
 		}
 		String decryptedWord = decryptStartingFrom(cryptotext.substring(1), startDecrypted.charAt(0));
 		if (decryptedWord == null) {
-			System.err.println("Wystπpi≥ b≥πd podczas deszyfrowania wiadomoúci.");
+			System.err.println("WystƒÖpi≈Ç b≈ÇƒÖd podczas deszyfrowania wiadomo≈õci.");
 			return null;
 		}
 		return decryptedWord;
@@ -447,7 +447,7 @@ public class BlackBox {
 			return null;
 		}
 		if (!_alphabet.hasLetter(start)) {
-			System.err.println("Stan startowy dla odszyfrowania nie jest literπ z zadanego alfabetu.");
+			System.err.println("Stan startowy dla odszyfrowania nie jest literƒÖ z zadanego alfabetu.");
 			return null;
 		}
 		synchronized (decryptionLock) {
@@ -480,7 +480,7 @@ public class BlackBox {
 				_decryptionDirections = null;
 				return decoded;
 			} catch (Exception e) {
-				System.err.println(e.getMessage() + " S≥owo nie zostanie odszyfrowane");
+				System.err.println(e.getMessage() + " s≈Çowo nie zostanie odszyfrowane");
 				return null;
 			}
 		}
@@ -488,7 +488,7 @@ public class BlackBox {
 
 	public String decryptStartingFrom_old(String cryptotext) {
 		if (cryptotext == null || cryptotext.isEmpty()) {
-			System.err.println("Poda≥eú puste s≥owo do odszyfrowania.");
+			System.err.println("Poda≈Çe≈õ puste s≈Çowo do odszyfrowania.");
 			return null;
 		}
 		String word = cryptotext;
@@ -499,14 +499,14 @@ public class BlackBox {
 			}
 			return word;
 		} catch (Exception e) {
-			System.err.println(e.getMessage() + " S≥owo nie zostanie odszyfrowane");
+			System.err.println(e.getMessage() + " s≈Çowo nie zostanie odszyfrowane");
 			return null;
 		}
 	}
 
 	public String decryptStartingFrom_old2(String cryptotext) {
 		if (cryptotext == null || cryptotext.isEmpty()) {
-			System.err.println("Poda≥eú puste s≥owo do odszyfrowania.");
+			System.err.println("Poda≈Çe≈õ puste s≈Çowo do odszyfrowania.");
 			return null;
 		}
 		String word = cryptotext;
@@ -516,7 +516,7 @@ public class BlackBox {
 			}
 			return dec_old(word);
 		} catch (Exception e) {
-			System.err.println(e.getMessage() + " S≥owo nie zostanie odszyfrowane");
+			System.err.println(e.getMessage() + " s≈Çowo nie zostanie odszyfrowane");
 			return null;
 		}
 	}
@@ -527,7 +527,7 @@ public class BlackBox {
 				if (changePosition < _r.length) {
 					_r[changePosition] = !_r[changePosition];
 				} else {
-					System.err.println("Klucz r (d≥ugoúci " + _r.length + ") jest zbyt krÛtki, by zmieniÊ jego pozycjÍ nr " + changePosition + ".");
+					System.err.println("Klucz r (d≈Çugo≈õci " + _r.length + ") jest zbyt kr√≥tki, by zmieniƒá jego pozycjƒô nr " + changePosition + ".");
 				}
 			}
 		} else {
@@ -535,7 +535,7 @@ public class BlackBox {
 				if (changePosition < _r.length) {
 					_k[changePosition] = !_k[changePosition];
 				} else {
-					System.err.println("Klucz k (d≥ugoúci " + _k.length + ") jest zbyt krÛtki, by zmieniÊ jego pozycjÍ nr " + changePosition + ".");
+					System.err.println("Klucz k (d≈Çugo≈õci " + _k.length + ") jest zbyt kr√≥tki, by zmieniƒá jego pozycjƒô nr " + changePosition + ".");
 				}
 			}
 		}
@@ -554,7 +554,7 @@ public class BlackBox {
 		Map<CharacterArray, Character> qMix, yMix = _ltGraph.getYMixLetterMap(), zMix = _ltGraph.getZMixLetterMap();
 		for (int i = letterNumber + 1; i < _alphabet.getSize(); i++) {
 			qMix = _ltGraph.getQMixLetterMap();
-			// System.out.println("--------------------- wyjúciowy q: ");
+			// System.out.println("--------------------- wyj≈õciowy q: ");
 			// for (int w = 0; w < _alphabet.getSize(); w++)
 			// for (int ww = 0; ww < _alphabet.getSize(); ww++)
 			// System.out.println(_alphabet.getLetter(w)+"
@@ -610,7 +610,7 @@ public class BlackBox {
 		Map<CharacterArray, Character> qMix, yMix = _ltGraph.getYMixLetterMap(), zMix = _ltGraph.getZMixLetterMap();
 		for (int j = letterNumber + 1; j < _alphabet.getSize(); j++) {
 			qMix = _ltGraph.getQMixLetterMap();
-			// System.out.println("--------------------- wyjúciowy q: ");
+			// System.out.println("--------------------- wyj≈õciowy q: ");
 			// for (int w = 0; w < _alphabet.getSize(); w++)
 			// for (int ww = 0; ww < _alphabet.getSize(); ww++)
 			// System.out.println(_alphabet.getLetter(w)+"
@@ -669,7 +669,7 @@ public class BlackBox {
 		for (int i = 0; i < _alphabet.getSize(); i++) {
 			for (int j = i + 1; j < _alphabet.getSize(); j++) {
 				qMix = _ltGraph.getQMixLetterMap();
-				// System.out.println("--------------------- wyjúciowy q: ");
+				// System.out.println("--------------------- wyj≈õciowy q: ");
 				// for (int w = 0; w < _alphabet.getSize(); w++)
 				// for (int ww = 0; ww < _alphabet.getSize(); ww++)
 				// System.out.println(_alphabet.getLetter(w)+"
@@ -729,7 +729,7 @@ public class BlackBox {
 		for (int i = 0; i < _alphabet.getSize(); i++) {
 			for (int j = i + 1; j < _alphabet.getSize(); j++) {
 				qMix = _ltGraph.getQMixLetterMap();
-				// System.out.println("--------------------- wyjúciowy q: ");
+				// System.out.println("--------------------- wyj≈õciowy q: ");
 				// for (int w = 0; w < _alphabet.getSize(); w++)
 				// for (int ww = 0; ww < _alphabet.getSize(); ww++)
 				// System.out.println(_alphabet.getLetter(w)+"

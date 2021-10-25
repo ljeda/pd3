@@ -3,7 +3,7 @@ package pd.core;
 import java.util.*;
 
 /**
- * @author £ukasz JÍda
+ * @author ≈Åukasz Jƒôda
  * 
  */
 public class Mix {
@@ -33,7 +33,7 @@ public class Mix {
 		}
 		if (!bijectValuesSet.isEmpty()) {
 			CharacterArray notBiject = bijectValuesSet.iterator().next();
-			throw new Exception("Miks dla stanu '" + notBiject.getState() + "' nie jest bijekcjπ.");
+			throw new Exception("Miks dla stanu '" + notBiject.getState() + "' nie jest bijekcjƒÖ.");
 		}
 		_letterMap = letterMap;
 		fillRevertLetterMap();

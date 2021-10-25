@@ -85,10 +85,10 @@ public class TextUtil {
 
 	public static boolean[] getBitXorDifference(String firstText, String secondText, int letterBitLength) throws Exception {
 		if (firstText == null || secondText == null) {
-			throw new Exception("Nie poda³eœ poprawnie tekstów do operacji ró¿nicy symetrycznej.");
+			throw new Exception("Nie PodaÅ‚eÅ› poprawnie tekstÃ³w do operacji rÃ³Å¼nicy symetrycznej.");
 		}
 		if (firstText.length() != secondText.length()) {
-			throw new Exception("D³ugoœci tekstów do operacji ró¿nicy symetrycznej nie s¹ " + "takie same.");
+			throw new Exception("dÅ‚ugoÅ›ci tekstÃ³w do operacji rÃ³Å¼nicy symetrycznej nie sÄ… " + "takie same.");
 		}
 		Boolean[] firstTextBits = getBits(firstText, letterBitLength), secondTextBits = getBits(secondText, letterBitLength);
 		boolean[] difference = new boolean[firstTextBits.length];
@@ -109,7 +109,7 @@ public class TextUtil {
 
 	private static final Random ensureGenerator(Random generator) {
 		if (generator == null) {
-			System.out.println("U¿ywam domyœlnego generatora liczb pseudolosowych w narzêdziach tektstowych.");
+			System.out.println("UÅ¼ywam domyÅ›lnego generatora liczb pseudolosowych w narzÄ™dziach tektstowych.");
 			return _defaultGenerator;
 		}
 		return generator;

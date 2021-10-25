@@ -6,7 +6,7 @@ import pd.core.*;
 import pd.util.*;
 
 /**
- * @author £ukasz Jêda
+ * @author Łukasz Jęda
  * 
  */
 public class BlackBoxesGenerator {
@@ -14,7 +14,7 @@ public class BlackBoxesGenerator {
 	public BlackBoxesGenerator(Random generator, int blackBoxesNumber, Alphabet alphabet, int n, int keysLength, boolean generateSeparateKeys) {
 		validateCommonEntries(generator, blackBoxesNumber, alphabet, n);
 		if (keysLength < 1) {
-			System.err.println("D³ugoœæ kluczy powinna byæ dodatnia. " + "Ustawiam domyœln¹ wartoœæ (128).");
+			System.err.println("Długość kluczy powinna być dodatnia. " + "Ustawiam domyślną wartość (128).");
 			_keysLength = 128;
 		} else {
 			_keysLength = keysLength;
@@ -28,7 +28,7 @@ public class BlackBoxesGenerator {
 	public BlackBoxesGenerator(Random generator, int blackBoxesNumber, Alphabet alphabet, int n, List<Boolean> k, List<Boolean> r) {
 		validateCommonEntries(generator, blackBoxesNumber, alphabet, n);
 		if (k == null || k.isEmpty()) {
-			System.err.println("�le zdefiniowany klucz k. Ustawiam wartoœæ domyœln¹.");
+			System.err.println("Źle zdefiniowany klucz k. Ustawiam wartość domyślną.");
 			_k = new ArrayList<Boolean>();
 			_k.add(true);
 			_k.add(false);
@@ -36,7 +36,7 @@ public class BlackBoxesGenerator {
 			_k = k;
 		}
 		if (r == null || r.isEmpty()) {
-			System.err.println("�le zdefiniowany klucz r. Ustawiam wartoœæ domyœln¹.");
+			System.err.println("Źle zdefiniowany klucz r. Ustawiam wartość domyślną.");
 			_r = new ArrayList<Boolean>();
 			_r.add(true);
 			_r.add(false);
@@ -48,25 +48,25 @@ public class BlackBoxesGenerator {
 
 	private void validateCommonEntries(Random generator, int blackBoxesNumber, Alphabet alphabet, int n) {
 		if (n < 0) {
-			System.err.println("Liczba iteracji algorytmu powinna byæ nieujemna. " + "Ustawiam wartoœæ domyœln¹ (1).");
+			System.err.println("Liczba iteracji algorytmu powinna być nieujemna. " + "Ustawiam wartość domyślną (1).");
 			_n = 1;
 		} else {
 			_n = n;
 		}
 		if (blackBoxesNumber < 1) {
-			System.err.println("Liczba miksów do wygenerowania powinna byæ dodatnia. " + "Generujê jeden miks.");
+			System.err.println("Liczba miksów do wygenerowania powinna być dodatnia. " + "Generuję jeden miks.");
 			_blackBoxesNumber = 1;
 		} else {
 			_blackBoxesNumber = blackBoxesNumber;
 		}
 		if (alphabet == null || alphabet.getSize() < 2) {
-			System.err.println("Alphabet jest za ma³y by za³o¿enia co do miksów mog³y byæ " + "spe³nione. U¿ywam liter strony kodowej CP1250.");
+			System.err.println("Alphabet jest za mały by założenia co do miksów mogły być " + "spełnione. Używam liter strony kodowej CP1250.");
 			_alphabet = new Alphabet();
 		} else {
 			_alphabet = alphabet;
 		}
 		if (generator == null) {
-			System.err.println("Nie podano generatora liczb pseudolosowych. U¿ywam domyœlnego w generowaniu .");
+			System.err.println("Nie podano generatora liczb pseudolosowych. Używam domyślnego w generowaniu.");
 			_generator = new Random(16 + 10 + 2010);
 		} else {
 			_generator = generator;
@@ -136,10 +136,10 @@ public class BlackBoxesGenerator {
 
 	public BlackBox getBlackBox(int i) throws Exception {
 		if (_blackBoxes == null) {
-			throw new Exception("Instancje zosta³y zainicjalizowane niepoprawnie.");
+			throw new Exception("Instancje zostały zainicjalizowane niepoprawnie.");
 		}
 		if (i < 0 || i >= _blackBoxes.length) {
-			throw new Exception("Za¿¹dano instancji spoza wygenerowanego zakresu, " + "mo¿liwe wartoœci to 0 - " + _blackBoxes.length + ".");
+			throw new Exception("Zażądano instancji spoza wygenerowanego zakresu, " + "możliwe wartości to 0 - " + _blackBoxes.length + ".");
 		}
 		return _blackBoxes[i];
 	}

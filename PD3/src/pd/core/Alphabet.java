@@ -5,7 +5,7 @@ import java.nio.charset.*;
 import java.util.*;
 
 /**
- * @author £ukasz Jêda
+ * @author Åukasz JÄ™da
  * 
  */
 public class Alphabet {

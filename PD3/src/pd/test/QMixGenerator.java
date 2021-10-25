@@ -6,7 +6,7 @@ import pd.core.*;
 import pd.util.*;
 
 /**
- * @author £ukasz Jêda
+ * @author Åukasz JÄ™da
  * 
  */
 public class QMixGenerator {

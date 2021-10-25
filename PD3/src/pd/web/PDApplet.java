@@ -7,7 +7,7 @@ import javax.swing.*;
 import pd.core.*;
 
 /**
- * @author £ukasz Jêda
+ * @author Åukasz JÄ™da
  * 
  */
 public class PDApplet extends JApplet {
@@ -37,7 +37,7 @@ public class PDApplet extends JApplet {
 
 	private Map<CharacterArray, Character> validateMixDefiniton(String mixDefinition) {
 		Map<CharacterArray, Character> mix = new HashMap<CharacterArray, Character>();
-		String errorMessage = "Miks powinien byæ zdefiniowany poprzez trójki liter z alfabetu " + "oddzielone now¹ lini¹.";
+		String errorMessage = "Miks powinien byÄ‡ zdefiniowany poprzez trÃ³jki liter z alfabetu " + "oddzielone nowÄ… liniÄ….";
 		try {
 			if (mixDefinition == null || mixDefinition.isEmpty()) {
 				return null;

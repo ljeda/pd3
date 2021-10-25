@@ -3,7 +3,7 @@ package pd.core;
 import java.util.*;
 
 /**
- * @author £ukasz JÍda
+ * @author ≈Åukasz Jƒôda
  * 
  */
 public class ThreeMixes {
@@ -12,14 +12,14 @@ public class ThreeMixes {
 		try {
 			_qMix = new Mix(alphabet, qMap);
 		} catch (Exception e) {
-			System.err.println(e.getMessage() + " Uøywam domyúlnych ustawieÒ miksa Q.");
+			System.err.println(e.getMessage() + " U≈ºywam domy≈õlnych ustawie≈Ñ miksa Q.");
 			generateQMix(alphabet);
 		}
 		try {
 			_yMix = new Mix(alphabet, yMap);
 			_zMix = new Mix(alphabet, zMap);
 		} catch (Exception e) {
-			System.err.println(e.getMessage() + " Uøywam domyúlnych ustawieÒ miksÛw Y i Z.");
+			System.err.println(e.getMessage() + " U≈ºywam domy≈õlnych ustawie≈Ñ miks√≥w Y i Z.");
 			generateYZMixes(alphabet);
 		}
 		int alphabetSize = alphabet.getSize();
@@ -28,12 +28,12 @@ public class ThreeMixes {
 			for (int j = 0; i < alphabetSize; i++) {
 				Character state = alphabet.getLetter(i), letter = alphabet.getLetter(j);
 				if (_yMix.getMix(state, letter).equals(_zMix.getMix(state, letter)) && !generateDefaultYZMixes) {
-					System.err.println("Miksy Y i Z nie spe≥niajπ za≥oøeÒ. Uøywam domyúlnych " + "ustawieÒ miksÛw Y i Z.");
+					System.err.println("Miksy Y i Z nie spe≈ÇniajƒÖ za≈Ço≈ºe≈Ñ. U≈ºywam domy≈õlnych " + "ustawie≈Ñ miks√≥w Y i Z.");
 					generateDefaultYZMixes = true;
 				}
 				for (int k = i + 1; k < alphabetSize; k++) {
 					if (_qMix.getMix(state, letter).equals(_qMix.getMix(alphabet.getLetter(k), letter)) && !generateDefaultQMix) {
-						System.err.println("Miks Q nie spe≥nia za≥oøeÒ. Uøywam domyúlnych " + "ustawieÒ miksa Q.");
+						System.err.println("Miks Q nie spe≈Çnia za≈Ço≈ºe≈Ñ. U≈ºywam domy≈õlnych " + "ustawie≈Ñ miksa Q.");
 						generateDefaultQMix = true;
 					}
 				}

@@ -70,6 +70,8 @@ public class Tst {
 		System.out.println(end2-start2);
 		System.out.println(end3-start3);
 		System.out.println(end4-start4);
+		
+		System.out.println(a);
 	}
 	
 	private Character getTab(int i) {

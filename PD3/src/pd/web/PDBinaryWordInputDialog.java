@@ -3,7 +3,7 @@ package pd.web;
 import java.util.*;
 
 /**
- * @author £ukasz Jêda
+ * @author Åukasz JÄ™da
  * 
  */
 public class PDBinaryWordInputDialog extends PDInputDialog<List<Boolean>> {
@@ -22,7 +22,7 @@ public class PDBinaryWordInputDialog extends PDInputDialog<List<Boolean>> {
 			} else if (c == '1') {
 				_value.add(true);
 			} else {
-				return "S³owo powinno sk³adaæ siê wy³¹cznie z zer i jedynek.";
+				return "sÅ‚owo powinno skÅ‚adaÄ‡ siÄ™ wyÅ‚Ä…cznie z zer i jedynek.";
 			}
 		}
 		_stringValue = entry;

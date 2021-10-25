@@ -1497,3 +1497,106 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.rse
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SESSION 2021-10-23 10:02:07.678 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_261
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_PL
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/ljeda/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/ljeda/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-10-23 10:04:44.374
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2021-10-23 10:04:47.092
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-23 10:04:47.093
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2dacad1d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15a87fbb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-23 10:04:47.093
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F9:
+Binding(COMMAND+SHIFT+F9,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.deactivateAllTasks,Deactivate Task,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6d92bfaf,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F9,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.checkin,Check-In,
+		Check-In,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@a23b96b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-23 10:04:47.093
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F10:
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.showHistory,Show History,
+		Show the revision history of the currently selected file ,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@42af2977,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showSystemMenu,Show System Menu,
+		Show the system menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14acc33e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-23 10:04:47.093
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F12:
+Binding(COMMAND+SHIFT+F12,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.searchForTask,Search Repository for Task,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6cbb79c3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F12,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.accept,Accept,
+		Accept,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7bc46dde,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2021-10-23 10:04:49.886
+!MESSAGE Duplicate template id: 'com.ibm.team.build.extensions.toolkit.template.QueryWorkItemCustomInteger'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-10-23 10:04:49.900
+!MESSAGE Duplicate template id: 'com.ibm.team.enterprise.smpe.toolkit.template.CreateProductDriverTask'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-10-23 10:04:49.912
+!MESSAGE Duplicate template id: 'com.ibm.team.process.internal.ide.ui.settings.templates.RoleDefinitions'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-10-23 10:11:34.426
+!MESSAGE Duplicate template id: 'com.ibm.team.build.extensions.toolkit.template.QueryWorkItemCustomInteger'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-10-23 10:11:34.440
+!MESSAGE Duplicate template id: 'com.ibm.team.enterprise.smpe.toolkit.template.CreateProductDriverTask'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-10-23 10:11:34.451
+!MESSAGE Duplicate template id: 'com.ibm.team.process.internal.ide.ui.settings.templates.RoleDefinitions'

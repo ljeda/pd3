@@ -4,7 +4,7 @@ import javax.swing.*;
 import javax.swing.border.*;
 
 /**
- * @author £ukasz JÍda
+ * @author ≈Åukasz Jƒôda
  * 
  */
 public class PDScrollTextArea extends JTextArea {

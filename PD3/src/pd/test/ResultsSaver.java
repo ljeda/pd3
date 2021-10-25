@@ -39,7 +39,7 @@ public class ResultsSaver {
 
 	public ResultsSaver(int blackBoxesNumber, String resultsDir) throws Exception {
 		if (blackBoxesNumber < 1) {
-			throw new Exception("Liczba powtórzeñ testu powinna byæ dodatnia.");
+			throw new Exception("Liczba powtÃ³rzeÅ„ testu powinna byÄ‡ dodatnia.");
 		}
 		_blackBoxesNumber = blackBoxesNumber;
 		_resultsDir = validateResultsDir(resultsDir);
@@ -50,7 +50,7 @@ public class ResultsSaver {
 		if (dir.exists() && dir.isDirectory()) {
 			return dir;
 		} else {
-			throw new Exception("Podano b³êdn¹ œcie¿kê do katalogu z wynikami testów.");
+			throw new Exception("Podano bÅ‚Ä™dnÄ… Å›cieÅ¼kÄ™ do katalogu z wynikami testÃ³w.");
 		}
 	}
 
@@ -99,7 +99,7 @@ public class ResultsSaver {
 		try {
 			resultsSaver = new ResultsSaver(blackBoxesNumber, workspaceRootDir);
 		} catch (Exception e) {
-			System.err.println("B³¹d inicjalizacji testów:  " + e.getLocalizedMessage());
+			System.err.println("bÅ‚Ä…d inicjalizacji testÃ³w:  " + e.getLocalizedMessage());
 			return;
 		}
 
@@ -107,13 +107,13 @@ public class ResultsSaver {
 			try {
 				resultsSaver.runTestAndSaveResults(testMode, quick);
 			} catch (Exception e) {
-				System.err.println("Zapisywanie wyników dla testu: " + testMode + " nie uda³o siê: " + e.getLocalizedMessage());
+				System.err.println("Zapisywanie wynikÃ³w dla testu: " + testMode + " nie udaÅ‚o siÄ™: " + e.getLocalizedMessage());
 			}
 		}
 	}
 
 	private static void printUsage() {
-		System.out.println("U¿ycie: java -jar PD_ResultsSaver [ <liczba_powtórzeñ_testu> [ --quick ] ]");
+		System.out.println("UÅ¼ycie: java -jar PD_ResultsSaver [ <liczba_powtÃ³rzeÅ„_testu> [ --quick ] ]");
 	}
 
 	public static void main(String[] args) {
@@ -126,7 +126,7 @@ public class ResultsSaver {
 			try {
 				blackBoxesNumber = Integer.parseInt(args[0]);
 			} catch (NumberFormatException e) {
-				System.err.println("Podano z³¹ liczbê powtórzeñ testu.");
+				System.err.println("Podano zÅ‚Ä… liczbÄ™ powtÃ³rzeÅ„ testu.");
 				printUsage();
 				return;
 			}

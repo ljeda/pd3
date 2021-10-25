@@ -8,10 +8,10 @@ public class AlphabetUtil {
 
 	public static final Alphabet generateAlphabet(int size) throws Exception {
 		if (size < 1) {
-			throw new Exception("Alfabet musi siê sk³adaæ z co najmniej jednej litery.");
+			throw new Exception("Alfabet musi siÄ™ skÅ‚adaÄ‡ z co najmniej jednej litery.");
 		}
 		if (size > 256) {
-			throw new Exception("Generowany alfabet mo¿e mieæ co najwy¿ej 256 liter.");
+			throw new Exception("Generowany alfabet moÅ¼e mieÄ‡ co najwyÅ¼ej 256 liter.");
 		}
 		LinkedHashSet<Character> letterSet = new LinkedHashSet<Character>();
 		for (int i = 0; i < size; i++) {

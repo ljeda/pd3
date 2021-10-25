@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import javax.swing.*;
 
 /**
- * @author £ukasz Jêda
+ * @author Åukasz JÄ™da
  * 
  */
 public class PDOutputStream extends OutputStream {

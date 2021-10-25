@@ -6,7 +6,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
- * @author £ukasz Jêda
+ * @author Åukasz JÄ™da
  * 
  */
 public class PDButton extends JButton {
